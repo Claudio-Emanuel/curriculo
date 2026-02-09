@@ -1,0 +1,119 @@
+body{
+    background-color: rgb(14, 56, 108);
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+}
+section{
+    display: flex;
+    flex-direction: column;
+    width: 400px;
+    height: 300px;
+    background-color: white;
+    border-radius: 5pt;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 5px 5px 5px 10px rgba(0, 0, 0, 0.235);
+
+}
+button{
+    border-width: 1.5px;
+    border-radius: 10px;
+    padding: 5px;
+    width: 100px;
+}
+h1{
+    color: white;
+}
+#msg{
+    font: 15pt normal;
+}
+img{
+    border-radius: 100pt;
+    width: 150pt;
+    height: 150pt;
+}
+footer{
+    text-align: center;
+    color: white;
+    font-style: italic;
+}
+.fill-button_C{
+    background: white;
+    border: 2px solid black;
+    cursor:pointer;
+    position: relative;
+    overflow: hidden;
+    transition: color 0.5s;
+    z-index: 1;
+}
+.fill-button_C::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background-color: rgb(14, 56, 108);
+    transition: width 1s;
+    z-index: -1;
+}
+.fill-button_C:hover:before{
+    width: 100%;
+}
+.fill-button_C:hover{
+    color: white;
+}
+.fill-button_G{
+    background: white;
+    border: 2px solid black;
+    cursor:pointer;
+    position: relative;
+    overflow: hidden;
+    transition: color 1s;
+    z-index: 1;
+}
+.fill-button_G::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background-color: black;
+    transition: width 1s;
+    z-index: -1;
+}
+.fill-button_G:hover:before{
+    width: 100%;
+}
+.fill-button_G:hover{
+    color:white;
+}
+.fill-button_Y{
+    background: white;
+    border: 2px solid black;
+    cursor:pointer;
+    position: relative;
+    overflow: hidden;
+    transition: color 1s;
+    z-index: 1;
+}
+.fill-button_Y::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background-color: rgb(255, 0, 0);
+    transition: width 1s;
+    z-index: -1;
+}
+.fill-button_Y:hover:before{
+    width: 100%;
+}
+.fill-button_Y:hover{
+    color:white;
+}
